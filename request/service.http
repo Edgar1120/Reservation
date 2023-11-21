@@ -1,0 +1,8 @@
+
+GET http://localhost:4000/service/getServices
+
+###
+POST http://localhost:4000/service/postService
+
+###
+DELETE http://localhost:3000/service/deleteService

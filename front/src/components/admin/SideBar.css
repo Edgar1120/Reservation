@@ -1,0 +1,199 @@
+.sidebar {
+  background-color: #fdd000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: #fdd000;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+
+}
+
+.nav-text {
+  display: flex;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #fd2233;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #fdd000;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+
+.content {
+  margin-left: 0;
+  transition: margin-left 0.5s;
+}
+
+/*paginas del admin*/
+/*Servicio*/
+.service,
+.agency,
+.reservation.client,
+.resAgency,
+.resClient {
+  margin-top: 0;
+  padding: 5px 0 5px 0;
+  background-color: #000000;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+.btn {
+  font-weight: 700;
+  color: #000000;
+  background-color: #fdd000;
+  padding: 12px 40px;
+  font-size: 18px;
+  margin-left: 700px;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.btn span {
+  z-index: 1;
+  position: relative;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn::before {
+  content: "";
+  background: #fd2233;
+  border-radius: 10px;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+
+
+.btn-modal {
+  font-weight: 700;
+  color: #000000;
+  background-color: #fdd000;
+  padding: 12px 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-modal span {
+  z-index: 1;
+  position: relative;
+}
+
+.btn-modal:hover {
+  color: #fff;
+}
+
+.btn-modal::before {
+  content: "";
+  background: #fd2233;
+  border-radius: 10px;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-modal:hover::before {
+  width: 100%;
+}
+
+.input-s {
+  width: 35%;
+  background: #fdd000;
+  border: 1px solid rgba(3, 3, 3, 0.5);
+  border-radius: 20px;
+  color: #070707;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.input-s:focus {
+  background: rgb(255, 255, 255);
+  color: #121212;
+}
+
+.input-s::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.input-s:focus::placeholder {
+  color: #000000;
+  opacity: 0.8;
+}
